@@ -1,4 +1,5 @@
 :root {
+  /* --colors-- */
   --black: hsl(0, 0%, 8%);      /* --bg-body */
   --darkgray: hsl(0, 0%, 14%);  /* --bg-contact */
   --green: hsl(153, 71%, 59%);  /* --accent */
@@ -6,5 +7,17 @@
   --white: hsl(0, 0%, 100%);    /* --text2 */
   --red: hsl(7, 100%, 68%);     /* --invalid */
 
-  --fs-body: 1.125rem;
+  /* --font_size-- */
+  --fs-18: 1.125rem;  /* 18px/16 = 1.125rem */
+  --fs-24: 1.5rem;    /* 24px/16 = 1.5rem */
+  --fs-26: 1.625rem;  /* 26px/16 = 1.625rem */
+  --fs-32: 2.0rem;    /* 32px/16 = 2rem */
+  --fs-40: 2.5rem;    /* 40px/16 = 2.5rem */
+  --fs-48: 3rem;      /* 48px/16 = 3rem */
+  --fs-72: 4.5rem;    /* 72px/16 = 4.5rem */
+  --fs-78: 4.875rem;  /* 78px/16 = 4.875rem */
+  --fs-80: 5rem;      /* 80px/16 = 5rem */
+  --fs-88: 5.5rem;    /* 88px/16 = 5.5rem */
+
+  --container: 69.375rem;   /* 1110px/16 */
 }

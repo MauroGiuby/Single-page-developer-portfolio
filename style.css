@@ -3,9 +3,13 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: var(--black);
   color: var(--grey);
-  font-size: var(--fs-body);   /* 18px/16 = 1.125rem */
+  font-size: var(--fs-18);   
   line-height: 1.56; /* 28/18 = 1.55555556 */
 }
 
-
+.wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+}
 
