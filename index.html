@@ -65,9 +65,48 @@
     </header>
 
     <main id="main">
-      <div class="wrapper">
-        <h1>Nice to meet you! I'm Adam Keyes.</h1>
-      </div>
+
+      <section class="hero">
+        <div class="wrapper hero__wrapper">
+          <picture class="hero__image">
+            <source media="(min-width: 62.5em)" srcset="/images/image-profile-desktop.webp">
+            <source media="(min-width: 37.5em)" srcset="/images/image-profile-tablet.webp">
+            <img src="/images/image-profile-mobile.webp" alt="picture of Adam Keyes">
+          </picture>
+
+          <div class="hero__text">
+            <h1 class="hero__headline">Nice to meet you! I'm Adam Keyes.</h1>
+            <p class="hero_description">
+              Based in the UK, I'm a front-end developer passionate about 
+              building accessible web apps that users love.
+            </p>
+            <a href="#" class="hero__contact">Contact me</a>
+          </div>
+          <!-- 
+          <img 
+            src="/images/image-profile-mobile.webp" alt="picture of Adam Keyes"  
+            srcset="
+              /images/image-profile-mobile.webp  348w, 
+              /images/image-profile-tablet.webp  646w, 
+              /images/image-profile-desktop.webp 890w
+            "
+            sizes="(max-width: 599.98px) 46.4vw, (max-width: 999.98px) 42vw, 445px" 
+            
+             
+          />
+          -->
+          <!-- 322px [w] / 768px [frame] = 0.42% = 42vw  on tablet, with min-width -->
+          <!-- 445px [w] / 1440px [frame] = 0.31% = 30vw  on desktop, with min-width --> 
+
+          <!-- 174px [w] / 375px [frame] = 0.464% = 46.4vw  on mobile, with max-width -->
+          <!-- 322px [w] / 768px [frame] = 0.42% = 42vw  on tablet, with max-width -->
+
+          <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images -->
+
+          
+        </div>
+      </section>
+      
     </main>
 
     <footer class="footer">
@@ -78,8 +117,7 @@
 
     
 
-    Based in the UK, I'm a front-end developer passionate about 
-    building accessible web apps that users love.
+    
 
     Contact me
 
