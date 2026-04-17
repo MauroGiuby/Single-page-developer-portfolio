@@ -1,8 +1,10 @@
 :root {
-  --black: #151515;
-  --darkgray: #242424;
-  --green: #4EE1A0;
-  --grey: #D9D9D9;
-  --white: #FFFFFF;
-  --red: #FF6F5B;
+  --black: hsl(0, 0%, 8%);      /* --bg-body */
+  --darkgray: hsl(0, 0%, 14%);  /* --bg-contact */
+  --green: hsl(153, 71%, 59%);  /* --accent */
+  --grey: hsl(0, 0%, 85%);      /* --text1 */
+  --white: hsl(0, 0%, 100%);    /* --text2 */
+  --red: hsl(7, 100%, 68%);     /* --invalid */
+
+  --fs-body: 1.125rem;
 }

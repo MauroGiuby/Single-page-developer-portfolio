@@ -1,4 +1,11 @@
 body {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--black);
+  color: var(--grey);
+  font-size: 18px;   /* 18/16 = 1.125
+  line-height: 1.56; /* 28/18 = 1.55555556 */
 }
+
+
+
