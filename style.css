@@ -7,6 +7,18 @@ body {
   line-height: 1.56; /* 28/18 = 1.55555556 */
 }
 
+a {
+  display: inline-block;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+a:hover > svg > path {
+  fill: var(--green);
+}
+
 .wrapper {
   width: calc(100% - 2rem);
   max-width: var(--container);
@@ -18,5 +30,18 @@ body {
   .wrapper {
     width: calc(100% - 3.75rem);  /* 60px / 16 */
   }
+}
+
+/* header */
+.header {
+
+}
+
+.header__home {
+  font-size: var(--fs-24);
+  font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);  
+  /* https://royalfig.github.io/fluid-typography-calculator/ */
+  color: var(--grey);
+  text-decoration: none;
 }
 
