@@ -21,6 +21,7 @@
   --fs-80: 5rem;      /* 80px/16 = 5rem */
   --fs-88: 5.5rem;    /* 88px/16 = 5.5rem */
 
-  /* 
   --container: 69.375rem;   /* 1110px/16 */
+
+  --transition: 250ms ease-in-out;
 }
