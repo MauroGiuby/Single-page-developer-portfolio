@@ -13,3 +13,10 @@ body {
   margin-inline: auto;
 }
 
+/* tablet style */
+@media (min-width: 37.5em) { /* 600px / 16 */
+  .wrapper {
+    width: calc(100% - 3.75rem);  /* 60px / 16 */
+  }
+}
+
