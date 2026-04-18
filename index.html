@@ -65,13 +65,18 @@
     </header>
 
     <main id="main">
-
       <section class="hero">
         <div class="wrapper hero__wrapper">
-          <picture class="hero__image">
+          <picture>
             <source media="(min-width: 62.5em)" srcset="/images/image-profile-desktop.webp">
             <source media="(min-width: 37.5em)" srcset="/images/image-profile-tablet.webp">
-            <img src="/images/image-profile-mobile.webp" alt="picture of Adam Keyes">
+            <img 
+              src="/images/image-profile-mobile.webp" 
+              alt="picture of Adam Keyes" 
+              class="hero__image"
+              width="174"
+              height="383"
+            />
           </picture>
 
           <div class="hero__text">

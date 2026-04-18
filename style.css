@@ -7,6 +7,13 @@ body {
   line-height: 1.56; /* 28/18 = 1.55555556 */
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
 a {
   transition: color var(--transition);
 }
@@ -88,19 +95,26 @@ a:hover {
 
 /* hero */
 .hero {
-
-}
-
-.hero__wrapper {
   
 }
 
-.hero__image {
+.hero__wrapper {
+  /* position: relative; */
+}
 
+.hero__image {
+  position: absolute; /* overlap a picture on text + insert "position: relative on .hero_wrapper" */
+  top: 0;
+  left: 50%;
+  translate: -50%; 
+  outline: 2px solid lime;
+  /* margin-inline: auto; */ 
+  display: block;
 }
 
 .hero__text {
-
+  text-align: center;
+  top: 295px;
 }
 
 .hero__description {
