@@ -25,7 +25,7 @@ h1 {
   font-size: var(--fs-40);
   font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem); 
   /* https://royalfig.github.io/fluid-typography-calculator/ */
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 600px){
@@ -45,6 +45,7 @@ p {
   font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem); 
   line-height: 1.5;
   color: var(--white);
+  margin-bottom: 24px;
 }
 
 a {
@@ -134,6 +135,7 @@ a:hover {
     align-items: center;
     text-align: left;
     gap: 32px;
+    margin-bottom: 90px;
   }
 
   .header__home {
@@ -148,6 +150,8 @@ a:hover {
 }
 
 .hero__wrapper {
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--grey);
   /* position: relative; */
 }
 
@@ -158,6 +162,20 @@ a:hover {
   translate: -50%; 
   /* margin-inline: auto; */ 
   display: block;
+}
+
+.hero__rings {
+  position: absolute;
+  top: 130px;
+  right: 50%;
+  z-index: -1; /* puts the rings behind Adam's image */
+}
+
+.hero__circle {
+  position: absolute;
+  top: 254px; /* 383px height Adam's image - 129px circle diameter */
+  right: 0; 
+  translate: 50%; /* 129 circle diameter / 2 = 64.5 */
 }
 
 .hero__text {
@@ -171,14 +189,6 @@ h1 > span {
   background-position: 0 1.18em;
   background-repeat: repeat-x;
   background-size: 8px 4px;
-}
-
-h1 > span::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--green);
-  /* https://codepen.io/johndjameson/pen/NrZgQY?editors=1100 */
 }
 
 /*
@@ -197,4 +207,21 @@ h1 > span::after {
 
 .hero__contact {
 
+}
+
+/* tablet */
+@media (min-width: 37.5em) {
+  .hero__image {
+    width: 20.125rem; /* 322px Adam's tablet image / 16 = 20.125rem */
+    height: auto;
+    left: 50%;
+    right: 0;
+    translate: 0;
+  }
+
+  .hero__text {
+    width: 58vw; /* 445px / 768 = 0.5794270833333 */
+    margin-top: 0;
+    text-align: left;
+  }
 }
