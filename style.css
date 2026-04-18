@@ -138,6 +138,7 @@ a:hover {
 
   .header {
     margin-top: 30px;
+    margin-bottom: 90px;
   }
 
   .header__nav {
@@ -145,12 +146,23 @@ a:hover {
     align-items: center;
     text-align: left;
     gap: 32px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
   }
 
   .header__home {
     flex: 1;
     margin-inline-end: auto;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .header {
+    margin-top: 40px;
+    margin-bottom: 127px;
+  }
+
+  .header__nav {
+    padding-right: 30px;
   }
 }
 
@@ -160,7 +172,7 @@ a:hover {
 }
 
 .hero__wrapper {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   border-bottom: 1px solid var(--grey);
   /* position: relative; */
 }
@@ -235,8 +247,12 @@ h1 > span {
 
 /* tablet */
 @media (min-width: 37.5em) {
+  .hero__wrapper {
+    padding-bottom: 60px;
+  }
+
   .hero__image {
-    width: 20.125rem; /* 322px Adam's tablet image / 16 = 20.125rem */
+    width: 322px; /* 322px Adam's tablet image / 16 = 20.125rem */
     height: auto;
     left: auto;
     right: 0;
@@ -266,13 +282,20 @@ h1 > span {
   }
 
   .hero__description {
-    margin-bottom: 24px;
+    margin-bottom: 34px;
   }
 }
 
 /* desktop */
-
 @media (min-width: 62.5em) {  /* 1000px / 16 */
+
+  .hero__wrapper {
+    position: relative;
+  }
+
+  .hero__image {
+    translate: 0 -199px; /* 127margin-bottom + 32content + 30margin-top + 10over-top = 199px  */
+  }
 
   .hero__headline {
     margin-bottom: 43px;
@@ -280,5 +303,9 @@ h1 > span {
 
   .hero__headline > br {
     display: none;
+  }
+
+  .hero__description {
+    margin-bottom: 66px;
   }
 }
