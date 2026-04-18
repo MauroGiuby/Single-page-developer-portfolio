@@ -25,6 +25,7 @@ h1 {
   font-size: var(--fs-40);
   font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem); 
   /* https://royalfig.github.io/fluid-typography-calculator/ */
+  letter-spacing: -0.028em; /* 2.5px / 88 = 0.028 */
 
   /* margin-bottom: 24px; */
 }
@@ -58,7 +59,7 @@ a.underline {
   padding-bottom: 0.625rem;
   font-size: 1rem;
   line-height: 1.625; /* 26px/16 */
-  letter-spacing: 2.29px;
+  letter-spacing: 0.143em; /* 2.29 / 16 = 0.143125 */
   font-weight: 700;
   text-transform: uppercase;
   color: var(--grey);
@@ -150,7 +151,7 @@ a:hover {
   }
 
   .header__home {
-    flex: 1;
+    flex: 0 1 auto; 
     margin-inline-end: auto;
   }
 }
@@ -252,7 +253,11 @@ h1 > span {
   }
 
   .hero__image {
-    width: 322px; /* 322px Adam's tablet image / 16 = 20.125rem */
+    width: 42vw;
+    max-width: 445px;
+    /* width: clamp(20.125rem, 8.59375rem + 30.75vw, 27.8125rem); */
+    /* width: 322px; */
+    /* 322px Adam's tablet image / 16 = 20.125rem */
     height: auto;
     left: auto;
     right: 0;
@@ -282,6 +287,7 @@ h1 > span {
   }
 
   .hero__description {
+    width: 70%;
     margin-bottom: 34px;
   }
 }
@@ -291,10 +297,17 @@ h1 > span {
 
   .hero__wrapper {
     position: relative;
+    padding-bottom: 260px;
   }
 
   .hero__image {
+    /* width: 445px; */
     translate: 0 -199px; /* 127margin-bottom + 32content + 30margin-top + 10over-top = 199px  */
+  }
+
+  .hero__circle {
+    top: 322px;
+    right: 445px;
   }
 
   .hero__headline {
@@ -306,6 +319,7 @@ h1 > span {
   }
 
   .hero__description {
+    width: 38ch; /* ch is a unit for controlling the length of lines of text. */
     margin-bottom: 66px;
   }
 }
