@@ -698,12 +698,13 @@ h1 > span {
 
 .contact__control {
   position: relative;
+  margin-block-end: 16px;
 }
 
 .contact__control input,
 .contact__control textarea {
   width: 100%;
-  margin-block-end: 16px;
+  /* margin-block-end: 16px; */
   padding-block: 16px; /* 16px/16 = 1rem */
   padding-inline: 24px; /* 24px/16 = 1.5rem */
   border: none;
@@ -740,11 +741,18 @@ h1 > span {
 
 .contact__invalid-icon {
   display: none;
-  position: absolute;
   width: var(--fs-24);
   height: var(--fs-24);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: -50% -50%;
 }
 
-.contact input:invalid ~ .contact__invalid-icon {
+.contact input:focus-visible:invalid ~ .contact__invalid-icon {
   display: inline-block;
+}
+
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+  top: 0;
 }
