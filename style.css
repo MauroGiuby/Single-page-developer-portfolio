@@ -147,10 +147,6 @@ svg {
   flex: 1 0 100%;
 }
 
-.header__social svg {
-  /* display: block; */
-}
-
 .header__social > svg > path {
   transition: fill var(--transition);
 }
@@ -194,9 +190,6 @@ svg {
 }
 
 /* -----HERO----- */
-.hero {
-  /* overflow-x: hidden; */
-}
 
 .hero__wrapper {
   padding-bottom: 80px;
@@ -250,10 +243,6 @@ h1 > span {
 
 .hero__description {
   margin-block-end: 24px;
-}
-
-.hero__contact {
-
 }
 
 /* tablet hero */
@@ -442,10 +431,6 @@ h1 > span {
 }
 
 /* -----PROJECTS----- */
-
-.projects {
-
-}
 
 .projects__wrapper {
   padding-block: 140px;
@@ -638,16 +623,6 @@ h1 > span {
   margin-block-end: var(--fs-20);
 }
 
-/*
-.contact__text {
-  text-align: center;
-}
-*/
-
-.contact__form {
-  
-}
-
 .contact__control {
   position: relative;
   margin-block-end: 16px;
@@ -672,10 +647,6 @@ h1 > span {
   opacity: 0.5;
   text-transform: uppercase;
 }
-
-.contact__control input {
-  
-} 
 
 .contact__control textarea {
   margin-block-end: 32px;
