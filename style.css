@@ -1,6 +1,12 @@
+body,
+input,
+textarea,
+button {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: 'Space Grotesk', sans-serif;
   background-color: var(--black);
   color: var(--grey);
   font-size: var(--fs-18);   
@@ -13,8 +19,6 @@ body {
 main {
   margin-block-end: 15rem; /* RIGA TEMPORANEA, DA RIMUOVERE SUCCESSIVAMENTE */
 }
-
-
 
 h1,
 h2,
@@ -63,12 +67,19 @@ a {
   transition: color var(--transition);
 }
 
-a:focus-visible {
-  outline: 2px solid var(--green);
+a:focus-visible, 
+input:focus-visible, 
+textarea:focus-visible {
+  outline: 2px dashed var(--green);
   outline-offset: 2px;
 }
 
-a.underline {
+input:invalid, 
+textarea:invalid {
+  outline-color: var(--red);
+}
+
+a.underline, button {
   display: inline-block;
   padding-bottom: 0.625rem;
   font-size: 1rem;
@@ -681,15 +692,44 @@ h1 > span {
 .contact__control input,
 .contact__control textarea {
   width: 100%;
+  margin-block-end: 16px;
+  padding-block: 16px; /* 16px/16 = 1rem */
+  padding-inline: 24px; /* 24px/16 = 1.5rem */
   border: none;
   border-bottom: 1px solid var(--grey);
   background: transparent;
+  font-size: var(--fs-16);
+  line-height: 1.625; /* 26px/16 */
+  color: var(--grey);
 } 
+
+/*
+.contact__control input:focus-visible,
+.contact__control textarea:focus-visible {
+  border-bottom-color: var(--green);
+}
+*/
+
+.contact__control > *::placeholder {
+  color: var(--grey);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
 
 .contact__control input {
   
 } 
 
 .contact__control textarea {
-  
+  margin-block-end: 32px;
 } 
+
+.contact__control.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__control button {
+  background-color: transparent;
+  border: none;
+}
